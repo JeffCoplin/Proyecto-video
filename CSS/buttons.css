@@ -1,0 +1,42 @@
+/* .button llamara a todas las clases que sean button. */ 
+.button{
+    /* inline-size sirve para el tamaño de la linea (ancho) */
+    inline-size: 60px;
+    /* block-size sirve para el tamaño del alto (vertical) */
+    block-size: 32px;
+   /* Boder: none se usa para que el boton no tenga bordes*/
+   border:none;
+     /* background-color se usa para el fondo del boton al tener transparente no se va a ver*/
+    background-color: transparent;
+     /* El repeat se usa para que la imagen al boton ser grande no se repita */
+     background-repeat: no-repeat;
+     /* el position es para centrar la imagen en el boton */
+    background-position: center;
+    /* Cuando el cursor este encima del objeto saldra la mano del mouse */
+    cursor:pointer;
+}
+
+/* Esto sirve para cuando active el boton cambie de tamaño al pusarlo */
+.button:active {
+    transform: scale(.9);
+}
+
+/* #play{contenido}   ... Llamaria al id identificado como (play). */
+
+#play {
+    background-image: url('/images/play.svg');
+}
+
+#pause {
+ background-image: url('/images/pause.svg');
+}
+
+#backward {
+
+    background-image: url('/images/-10.svg');
+}
+
+#forward {
+
+    background-image: url('/images/+10.svg');
+}

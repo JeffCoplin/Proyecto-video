@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video-player</title>
+<link rel="stylesheet" href="./CSS/estilos.css">
+</head>
+<body>
+
+    <div class="wrapper">
+     <div class="player">
+        <!-- // El atributo de controls sirve para que puedas controlar el video, como volumen, pasusarlo, etc...
+        // El atributo de autoplay es para que inicie automatico.
+         // El atributo de muted es para que este muteado desde el principio. -->
+        <video id ="video" poster="./images/poster.jpg" muted src="./videos/lofi.mp4"></video>
+        <div class="player-overlay">
+            <h2 class="player-title"> Música para programar </h2>
+            <div class="player-actions">
+            <!--  //El elemento id se usa para identificar a cada uno sin que se pueda confundir con otro.
+            // Las clases se pueden compartir en muchas partes, por ejemplo se pueden usar todos los botones solo con la clase. -->
+             <!-- // aria-label para dar nombre accesible a un elemento -->
+             <!-- // El atributo title sirve para cuando el pulsor este encima salga un mensaje-->
+            <button class="button" id="backward" aria-label="Retroceder 10 segundos" title="Retroceder 10 segundos"></button>
+            <button class="button" id="play" aria-label="Reproducir" title="Reproducir"></button>
+            <button class="button" id="pause" aria-label="Pausar" title="Pausar"></button>
+            <button class="button" id="forward" aria-label="Adelantar 10 segundos" title="Adelantar 10 segundos"></button>
+        </div>
+        <div class="player-progress">
+            <input id="progress" type="range" min="0" max="100" value="0" step="1">
+        </div>
+        </div>    
+        </div>
+</div>
+<script src="./js/index.js"></script>
+</body>
+</html>
